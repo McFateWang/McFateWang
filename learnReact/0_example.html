@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>McFateWang:Learn React.js</title>
+    </head>
+    <body>
+        <div>
+            <a class='wrapper'></a>
+        </div>
+        <script>
+            // ex 1
+            // const button = document.querySelector('.wj-btn')
+            // const buttonText = button.querySelector('.wj-text')
+            // let isLiked = false
+            // button.addEventListener('click', () => {
+            //     isLiked = !isLiked
+            //     if (isLiked) {
+            //         buttonText.innerHTML = '取消'
+            //     }
+            //     else {
+            //         buttonText.innerHTML = '再次点赞'
+            //     }
+            // }, false)
+
+            // ex 3
+            class LikeButton {
+                render () {
+                return `
+                    <button id='like-btn'>
+                    <span class='like-text'>赞</span>
+                    <span>👍</span>
+                    </button>
+                `
+                }
+            }
+            const wrapper = document.querySelector('.wrapper')
+            const likeButton1 = new LikeButton()
+            wrapper.innerHTML = likeButton1.render()
+
+            const likeButton2 = new LikeButton()
+            wrapper.innerHTML += likeButton2.render()
+
+            // // ex 2
+            // class LikeButton {
+            //     constructor () {
+            //         this.state = { isLiked: false }
+            //     }
+
+            //     changeLikeText () {
+            //         const likeText = this.el.querySelector('.like-text')
+            //         this.state.isLiked = !this.state.isLiked
+            //         likeText.innerHTML = this.state.isLiked ? '取消' : '点赞'
+            //     }
+
+            //     render () {
+            //         this.el = createDOMFromString(`
+            //             <button class='like-button'>
+            //             <span class='like-text'>点赞</span>
+            //             <span>👍</span>
+            //             </button>
+            //         `)
+            //         this.el.addEventListener('click', this.changeLikeText.bind(this), false)
+            //         return this.el
+            //     }
+            // }
+            // const wrapper = document.querySelector('.wrapper')
+            // console.log(wrapper)
+            // const likeButton1 = new LikeButton()
+            // wrapper.appendChild(likeButton1.render())
+
+            // const likeButton2 = new LikeButton()
+            // wrapper.appendChild(likeButton2.render())
+        </script>
+    </body>
+</html>
