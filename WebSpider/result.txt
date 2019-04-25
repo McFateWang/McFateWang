@@ -1,0 +1,667 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>平安银行综合能力 - 财务评估 - 和讯网</title>
+<link href="css/direction.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/switch.js"></script>
+
+<script language="javascript" src="/js/Helper.js"></script>
+<script language="javascript" src="/js/Ajax.js"></script>
+<script language="javascript" src="/js/flash.js"></script>
+
+</head>
+
+<body>
+
+<!--==========================login-header-s===============================-->
+<link rel="stylesheet" type="text/css" href="http://img.hexun.com/standardfootandhead/2015/css/header_v1.css" />
+<div class="shortcut-2014-w960" id="shortcut-2014">
+ <div class="shortcut-2014-w960-con clearfix">
+  <div class="topHeaderConL"><a href="http://www.hexun.com" target="blank" class="tohome">和讯首页</a>|<a href="http://3g.hexun.com/download_news/" target="_blank" class="mobileUpload">手机和讯</a></div>
+   <div class="topHeaderConR">
+    <link href="http://login.tool.hexun.com/OtherInterFace/style/newbase.css" rel="stylesheet" type="text/css">
+    <script src="http://login.tool.hexun.com/OtherInterFace/js/popup.js" type="text/javascript" charset="gb2312"></script>
+    <script charset="gb2312" type="text/javascript" language="javascript">
+      var href=window.location.href;   
+      hexunMember_loginSetup_signOutURL=href;//登出地址
+      hexunMember_loginSetup_noLoginDisplayMsg=""; //没登陆的提示
+      hexunMember_loginSetup_noLoginDisplayFlag="";//登录和注册中间的分隔符号 或 用户名与登出中间的分隔符号，不需要分隔符可以为空
+      hexunMember_loginSetup_islogined_isDisplay=true;//如果是登陆状态，true=显示用户名和登出按钮等信息,flase=不显示任何信息
+      hexunMember_loginSetup_referrer=document.referrer;//请不要修改此项
+      hexunMember_loginSetup_MastLogin=0;//如果需要不登陆就一直弹窗，在此设置一下弹窗时间间隔(秒)。如果等于0本项无效
+    </script>
+   <!--登录前-->
+    <div id="loginBef" class="loginBef" style="display: block;">
+     <div id="hexunMember_liveDisplay"><div id="hexunMember_nologinSetup_div_display_nologin"><span id="hexunMember_nologinSetup_span_display_noLoginDisplayMsg"></span><span id="hexunMember_nologinSetup_span_display_loginBTN"><a style="cursor:pointer" onclick="javascript:popupLogin();">登录</a></span><span id="hexunMember_nologinSetup_span_display_flag"></span><span id="hexunMember_nologinSetup_span_display_userREG"><a style="cursor:pointer" onclick="javascript:popupReg();">注册</a></span></div></div>
+    </div>
+    <!--登录后-->
+    <div id="loginAfter" class="loginAfter" style="display:none">     
+    </div>
+    <script src="http://login.tool.hexun.com/OtherInterFace/login_2014_drop.aspx" type="text/javascript" charset="gb2312"></script>
+   </div>
+ </div>
+</div>
+<!--==========================login-header-e===============================-->
+
+
+<!--==========================top-header-s=================================-->
+<div id=headerNav_2014 class="headernav-2014-w960" checkedByCssHelper="true"><a href="http://news.hexun.com/" target=_blank checkedByCssHelper="true">新闻</a>|<a href="http://stock.hexun.com/" target=_blank checkedByCssHelper="true">股票</a>|<a href="http://opinion.hexun.com/" target=_blank checkedByCssHelper="true">评论</a>|<a href="http://forex.hexun.com/" target=_blank checkedByCssHelper="true">外汇</a>|<a href="http://bond.hexun.com/" target=_blank checkedByCssHelper="true">债券</a>|<a href="http://funds.hexun.com/" target=_blank checkedByCssHelper="true">基金</a>|<a href="http://futures.hexun.com/" target=_blank checkedByCssHelper="true">期货</a>|<a href="http://gold.hexun.com/" target=_blank checkedByCssHelper="true">黄金</a>|<a href="http://bank.hexun.com/" target=_blank checkedByCssHelper="true">银行</a>|<a href="http://insurance.hexun.com/" target=_blank checkedByCssHelper="true">保险</a>|<a href="http://datainfo.stock.hexun.com/" target=_blank checkedByCssHelper="true">数据</a>|<a href="http://quote.hexun.com/" target=_blank checkedByCssHelper="true">行情</a>|<a href="http://trust.hexun.com/" target=_blank checkedByCssHelper="true">信托</a>|<a href="http://money.hexun.com/" target=_blank checkedByCssHelper="true">理财</a>|<a href="http://shoucang.hexun.com/" target=_blank checkedByCssHelper="true">收藏</a>|<a href="http://book.hexun.com/" target=_blank checkedByCssHelper="true">读书</a>|<a href="http://auto.hexun.com/" target=_blank checkedByCssHelper="true">汽车</a>|<a id="nav_house" href="http://house.hexun.com/" target=_blank checkedByCssHelper="true">房产</a>|<a href="http://tech.hexun.com/" target=_blank checkedByCssHelper="true">科技</a>|<a href="http://tv.hexun.com/" target=_blank checkedByCssHelper="true">视频</a>|<a href="http://blog.hexun.com/" target=_blank checkedByCssHelper="true">博客</a>|<a href="http://t.hexun.com/default.html" target=_blank checkedByCssHelper="true">微博</a>|<a href="http://guba.hexun.com/default.htm" target=_blank checkedByCssHelper="true">股吧</a>|<a href="http://bbs.hexun.com/" target=_blank checkedByCssHelper="true">论坛</a></div>
+<script language=JavaScript>
+if(document.cookie.indexOf("CITY=50")!=-1){
+document.getElementById('nav_house').href="http://cq.house.hexun.com/";
+}
+if(document.cookie.indexOf("CITY=53")!=-1){
+document.getElementById('nav_house').href="http://yn.house.hexun.com/";
+}
+if(document.cookie.indexOf("CITY=52")!=-1){
+document.getElementById('nav_house').href="http://gz.house.hexun.com/";
+}
+</script>
+
+<!--==========================top-header-e=================================-->
+
+
+<!--===========================logoNav-s===================================-->
+
+<div class="logonav-2014-w960 clearfix">
+  <div class="fl headerL">
+	  <a href="http://www.hexun.com" target="_blank"><img alt="" src="http://img.hexun.com/2015/sylogo/hexun_logo.jpg"></a>
+	  <a href="http://www.hexun.com" target="_blank" id="subChannelLogo"><img src="http://img.hexun.com/images2008/emp.gif" alt="" border="0" /></a>
+  </div>
+
+ <form id="hexunsearch" style="MARGIN: 0px" name="hexunsearch" method="post" target="_blank" onsubmit="return false;">
+  <div class="s_m fr">
+      <!--搜索-->
+		<input type="text" class="hx_inp" id="textMessage" name="textMessage" value="" autocomplete="off" style="color: rgb(133,133, 133);">
+		<input type="button" class="hx_btn" id="btnSearch">
+<input id="stockkey" type="hidden" name="key" value="1">
+	   <input id="stocktype" type="hidden" name="type" value="all">
+      <!--搜索 e--> 
+  </div>
+    </form>
+</div>
+
+
+<div id="searchInfPanel"></div>
+<script type="text/javascript" src="http://img.hexun.com/search/2014/js/config.js"></script>
+<script type="text/javascript" src="http://img.hexun.com/search/2014/js/search.js"></script>
+<script type="text/javascript">
+	hexun.common.Search.get().init({
+ 		 url:"http://so.hexun.com/ajax.do",//数据地址
+		inputID:"textMessage",//搜索框地址ID
+		containerID:"searchInfPanel",//联想容器ID
+		config:urlConfigList,//链接配置
+		searchBtnID:"btnSearch",//搜索按钮的ID
+		openNewPage:true//是否新打开页面,不传时就是在当前页打开
+	});
+</script>
+
+<!--===========================logoNav-e===================================-->
+
+
+<div id="wrap">
+
+<div id="webNav"  >
+<span style="float:left"><a href="http://www.hexun.com" target="_blank">和讯网</a> > <a href="http://stock.hexun.com/" target="_blank">股票</a> > <a href="http://pinggu.stock.hexun.com/" target="_blank">财务评估</a> > <a href="http://pinggu.stock.hexun.com/StockOverview.aspx" target="_blank">个股</a> > 平安银行综合能力</span>
+</div>
+
+
+
+<div id="content">
+<div id="contentLeft">
+
+<script>var LeftType = 99;</script>
+<!-- 财务评估_menu s: -->
+<ul id="caiWuPingGu">
+<li id="l_1" class="selected"><a href="http://pinggu.stock.hexun.com/AMarketOverview.aspx" title="总体市场">总体市场</a></li>
+<li id="l_2"><a href="http://pinggu.stock.hexun.com/IndustryOverview.aspx?itype=4" title="标准行业">标准行业</a></li>
+<li id="l_3"><a href="http://pinggu.stock.hexun.com/IndustryOverview.aspx?itype=1" title="ICB行业">ICB行业</a></li>
+<li id="l_4"><a href="http://pinggu.stock.hexun.com/IndustryOverview.aspx?itype=6" title="地域">地域</a></li>
+<li id="l_5"><a href="http://pinggu.stock.hexun.com/StockOverview.aspx" title="个股">个股</a></li>
+</ul>
+<!-- 财务评估_menu end -->
+<a href="http://stock.hexun.com/2010-09-15/124901261.html" target="_blank" class="helper"><img src="/img/help.gif" align="absmiddle" /> 使用帮助</a>
+<a href="mailto:datainfo@staff.hexun.com" class="helper"><img src="/img/phone.gif" align="absmiddle"/> 意见反馈</a>
+<!-- ad s: -->
+<span id="bannerButton01"></span>
+<!-- ad end -->
+<script>
+	var lid = '1';
+	
+	if((LeftType==1)||(LeftType==2)||(LeftType==3)) lid = 3;
+	if((LeftType==4)||(LeftType==5)) lid = 2;
+	if(LeftType==6) lid = 4;
+	if(LeftType==0) lid = 1;
+	if(LeftType==99) lid = 5;
+	
+	for(var j=1;j<=5;j++)
+	{
+		$("l_"+j).className = "";
+	}
+	$("l_"+lid).className = "selected";
+</script>
+
+</div>
+
+
+<div id="selectionBox">
+ <!-- select -->
+<div class=xmkc><input name="select1" id="select1" type="text" class="wena1" onClick="disp_cc('select1');" value="行业类型" /><div id="list_select1" style="display:none" class=classlist2> 
+<ul id="firstc" class="lis"></ul> 
+<span onclick="close_cc(this)" class=close ><a href="javascript:void(0);" onclick="return false">关闭</a></span> 
+</div> 
+</div>
+
+<div id="s1" class=xmkc><div class="iptbg" onClick="disp_cc('select2');"><input name="select2" id="select2" type="text" class="wena2" value="一级行业"/></div><div id="list_select2" style="display:none" class=classlist> 
+<ul id="Ul1" class="lis"></ul> 
+<span onclick="close_cc(this)" class=close><a href="javascript:void(0);" onclick="return false">关闭</a></span> 
+</div> 
+</div>
+
+<div id="s2" class=xmkc><div class="iptbg" onClick="disp_cc('select3');" ><input name="select3" id="select3" type="text" class="wena2" value="二级行业"/></div><div id="list_select3" style="display:none" class=classlist> 
+<ul id="Ul2" class="lis"></ul> 
+<span onclick="close_cc(this)" class=close><a href="javascript:void(0);" onclick="return false">关闭</a></span> 
+</div> 
+</div>
+
+<div id="s3" class="xmkc"><div class="iptbg" onClick="disp_cc('select4');"><input name="select4" id="select4" type="text" class="wena2" value="三级行业"/></div><div id="list_select4" style="display:none" class=classlist> 
+<ul id="Ul3" class="lis"></ul> 
+<span onclick="close_cc(this)" class=close><a href="javascript:void(0);" onclick="return false">关闭</a></span> 
+</div> 
+</div>
+
+<div class="xmkc"><input type="button" id="findIndustry" value="查询" class="chaxun"  onclick ="window.open('/Go.aspx?t=0&itype='+ $('hiddenIType').value +'&code=' + $('hiddenFindIndustry').value);" /></div>
+<!-- select end -->
+
+<!-- searchCode -->
+<div class="xmkc"><input type="text" id="findCode_funflow" value="代码/名称/拼音"  onclick="if(this.value =='代码/名称/拼音') this.value='';this.style.color='#000'" autocomplete="off"  onkeydown="Suggest_funflow.keyDown_funflow(event)" onfocus="Suggest_funflow.focusObj_funflow()" onblur="Suggest_funflow.blurObj_funflow()" class="codebox" /><input type="button" value="查询" class="chaxun" onclick="window.open('/Go.aspx?t=1&code=' + $('findCode_funflow').value + '&rank=3');"/></div>
+<input type="hidden" id="hiddenFindIndustry" />
+<input type="hidden" id="hiddenIType" />
+<!-- searchCode end-->
+
+</div>
+
+<script language="javascript" src="/js/select.js"></script>
+<script>
+    var first;
+    var second;
+    var third;
+    var ajax = new Ajax("/DataProvider/NavigationSelectJS.ashx", "", false, false, null, "Navigation_onCallback");
+    Navigation_onCallback = function(res) {
+        var array = unescape(res).split('|');
+        first = eval("[" + array[0] + "]");
+        second = eval("[" + array[1] + "]");
+        third = eval("[" + array[2] + "]");
+        fourth = eval("[" + array[3] + "]");
+        
+        var str = "";
+        for (var i = 0; i < first.length; i++) {
+            if (first[i]) {
+                str += '<li onclick=aa(first[' + i + '])><a href="javascript:void(0);" onclick="return false">' + first[i].name + '</a></li>';
+            }
+        }
+        $("firstc").innerHTML = str;
+    }
+    ajax.send();
+    ajax = null;
+</script>
+<script src="/js/stocksearch_pinggu.js" language="javascript" type="text/javascript"></script>
+<script language="javascript">Suggest_funflow.init_funflow("findCode_funflow", "ajaxdiv_funflow", "STOCKA");</script>
+<style>
+    .findCode_funflow {border:#6699cc 1px solid; height:18px;width:100px;}
+    .selected { background-color: #FFF1E4; }
+    .ajaxtable {font:12px; border: 1px solid #CCCCCC; background:#FFFFFF;line-height:20px; }
+    .ajaxtable td {text-align: left;color: #666666; line-height:20px;}
+</style>
+
+
+<div id="contentRight">
+<ul id="xiangmu">
+<li class="selected"><a href="StockTotal.aspx?code=000001"><img src="img/symbol_01.gif" />综合能力</a></li>
+<li><a href="StockProfit.aspx?code=000001"><img src="img/symbol_02.gif" />盈利能力</a></li>
+<li><a href="StockDebt.aspx?code=000001"><img src="img/symbol_03.gif" />偿债能力</a></li>
+<li><a href="StockGrowth.aspx?code=000001"><img src="img/symbol_04.gif" />成长能力</a></li>
+<li><a href="StockProperty.aspx?code=000001"><img src="img/symbol_05.gif" />资产经营</a></li>
+<li><a href="StockShareholder.aspx?code=000001"><img src="img/symbol_06.gif" />市场表现</a></li>
+<li><a href="StockInvest.aspx?code=000001"><img src="img/symbol_07.gif" />投资收益</a></li>
+</ul>
+<div class="clear"></div>
+
+<h6 style="padding:10px; border-bottom:3px solid #DADADA; margin-bottom:10px" id="explain">财务评估是运用统计学的因子分析法对上市公司的财务指标进行归类，总结，将反映上市公司的众多指标归纳成几个方面，然后对每个方面进行打分来反映上市公司在不同方面的得分，以帮助投资者对上市公司的财务状况和投资价值作出判断。</h6>
+
+<dl class="commenPart_01">
+<dt><strong>平安银行各期财务评估与行业、市场比较</strong></dt>
+<dd style="padding:5px 10px" class="bijiao" >
+<ul class="switchTag">
+<li id="bijiaoTit1" onmouseover="SwitchAbilityTagsOld('bijiao',1,7);selectType(1)"   class="selected"><span>综合能力</span></li>
+<li id="bijiaoTit2" onmouseover="SwitchAbilityTagsOld('bijiao',2,7);selectType(2)"><span>盈利能力</span></li>
+<li id="bijiaoTit3" onmouseover="SwitchAbilityTagsOld('bijiao',3,7);selectType(3)"><span>偿债能力</span></li>
+<li id="bijiaoTit4" onmouseover="SwitchAbilityTagsOld('bijiao',4,7);selectType(4)"><span>成长能力</span></li>
+<li id="bijiaoTit5" onmouseover="SwitchAbilityTagsOld('bijiao',5,7);selectType(5)"><span>资产经营</span></li>
+<li id="bijiaoTit6" onmouseover="SwitchAbilityTagsOld('bijiao',6,7);selectType(6)"><span>市场表现</span></li>
+<li id="bijiaoTit7" onmouseover="SwitchAbilityTagsOld('bijiao',7,7);selectType(7)"><span>投资收益</span></li>
+</ul>
+<div class="box">
+<table width="100%" border="0" cellspacing="15" cellpadding="0" >
+<tr>
+<td valign="top">
+		
+		<div id="flashContent">
+			<script>var stockCode = '000001';</script>
+			<script language="JavaScript" type="text/javascript" src="/js/flash/StockVSIndustryVSMarketFlash.js"></script>
+			<noscript><a href="http://www.adobe.com/go/getflashplayer/">获得 Flash</a></noscript>
+		</div>
+		
+</td>
+<td valign="top" class="abilityExplain">
+<div id="bijiaoCnt1" class="hexunShow">&nbsp;&nbsp;&nbsp;&nbsp;综合能力是用来衡量上市公司综合财务状况。根据因子分析的结论，对盈利能力得分、偿债能力得分、成长能力得分、资产经营得分、市场表现得分和投资收益六个方面，分别赋予权重计算出上市公司综合财务能力得分，该能力得分越高，说明财务能力越好。</div>
+<div id="bijiaoCnt2" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;盈利能力是用来衡量上市公司获取利润的能力。以总资产收益率、每股收益、成本费用利润率、主营业务利润率、净资产收益率、每股未分配利润作为主要解释因子，计算盈利能力得分，该能力得分越高，说明盈利能力越好。</div>
+<div id="bijiaoCnt3" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;偿债能力是用来衡量上市公司对负债能及时、足额偿还的保证程度。以速动比率、流动比率、现金负债比率、股东权益比率、资产负债率作为主要解释因子，计算偿债能力得分，该能力得分越高，说明偿债能力越好。</div>
+<div id="bijiaoCnt4" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;成长能力是用来衡量公司扩展经营的能力。以总资产扩张率、主营业务增长率、固定资产投资扩张率、每股收益增长率、净利润增长率作为主要解释因子，计算成长能力得分，该能力得分越高，说明成长能力越好。</div>
+<div id="bijiaoCnt5" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;资产经营是用来衡量上市公司在资产管理方面的效率。以总资产周转率、流动资产周转率作为主要解释因子，计算资产经营得分，该能力得分越高，说明资产经营越好。</div>
+<div id="bijiaoCnt6" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;市场表现是用来衡量上市公司股东获得收益的能力和股票的市场表现。以市净率、市盈率、每股净资产作为主要解释因子，计算市场表现得分，该能力得分越高，说明市场表现越好。</div>
+<div id="bijiaoCnt7" class="hexunHidden">&nbsp;&nbsp;&nbsp;&nbsp;投资收益是用来衡量财务报表中投资收益对财务状况的影响。考虑到新准则中投资收益确定对财务报表产生较大影响，将投资收益中的投资收益净利比作为主要解释因子，计算投资收益得分。该能力得分越高，说明投资收益越好。</div>
+</td>
+</tr>
+</table>
+<table width="97%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" style="margin:10px">
+<tr>
+<th rowspan="2">股票名称</th>
+<th rowspan="2">前收盘价<br/>(4月24日)</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">流通股总市值各项比重(%)</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">总资产各项比重(%)</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">主营业务收入各项比重(%)</th>
+</tr>
+<tr>
+  <th>市场</th>
+  <th>标准行业</th>
+  <th>ICB行业</th>
+  <th>地域</th>
+  <th>市场</th>
+  <th>标准行业</th>
+  <th>ICB行业</th>
+  <th>地域</th>
+  <th>市场</th>
+  <th>标准行业</th>
+  <th>ICB行业</th>
+  <th>地域</th>
+</tr>
+<tr><td class="td_c">平安银行</td><td class="td_r">14.07</td><td class="td_r">0.52</td><td class="td_r">3.69</td><td class="td_r">3.80</td><td class="td_r">3.01</td><td class="td_r">0.69</td><td class="td_r">2.04</td><td class="td_r">2.13</td><td class="td_r">5.43</td><td class="td_r">0.08</td><td class="td_r">0.80</td><td class="td_r">0.83</td><td class="td_r">0.60</td></tr>
+</table>
+</div>
+</dd>
+
+<dt><strong>平安银行最新财务评估与行业、市场比较</strong></dt>
+<dd style="padding:10px 10px 0 10px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zibiao_mainbox">
+<tr>
+<td class="zibiao_data" valign="top">
+		<div><strong>最新综合财务评估</strong></div>
+		
+		<div id="Div2">
+			<script>var stockCode = '000001';</script>
+			<script language="JavaScript" type="text/javascript" src="/js/flash/StockFinanceNewFlash.js"></script>
+			<noscript><a href="http://www.adobe.com/go/getflashplayer/">获得 Flash</a></noscript>
+		</div>
+		
+</td>
+<td valign="top" class="zibiao_pic">
+<ul class="switchTag">
+<li id="caiwupingguTit1" onmouseover="SwitchAbilityTagsOld('caiwupinggu',1,3)"  class="selected"><span>最新评估</span></li>
+<li id="caiwupingguTit2" onmouseover="SwitchAbilityTagsOld('caiwupinggu',2,3)"><span>去年同期</span></li>
+<li id="caiwupingguTit3" onmouseover="SwitchAbilityTagsOld('caiwupinggu',3,3)"><span>年度</span></li>
+</ul>
+<div class="box" style="padding:4px">
+<div id="caiwupingguCnt1" class="hexunShow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+  <tr>
+<th rowspan="2">财务能力<br/>(18年年度)</th>
+<th rowspan="2">评级</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">排名</th>
+</tr>
+  <tr>
+    <th>标准</th>
+    <th>ICB</th>
+    <th>地域</th>
+    <th>市场</th>
+  </tr>
+<tr><td class="td_c">综合能力</td><td>★★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">8</td><td class="td_r">35</td></tr><tr><td class="td_c">盈利能力</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">3</td><td class="td_r">8</td></tr><tr><td class="td_c">偿债能力</td><td>★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">14</td><td class="td_r">75</td></tr><tr><td class="td_c">成长能力</td><td>★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">10</td><td class="td_r">59</td></tr><tr><td class="td_c">资产经营</td><td>☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">17</td><td class="td_r">121</td></tr><tr><td class="td_c">市场表现</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">2</td><td class="td_r">8</td></tr><tr><td class="td_c">投资收益</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">3</td><td class="td_r">8</td></tr>
+</table></div>
+<div id="caiwupingguCnt2" class="hexunHidden">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+  <tr>
+<th rowspan="2">财务能力<br/>(17年年度)</th>
+<th rowspan="2">评级</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">排名</th>
+</tr>
+  <tr>
+    <th>标准</th>
+    <th>ICB</th>
+    <th>地域</th>
+    <th>市场</th>
+  </tr>
+
+</table>
+</div>
+<div id="caiwupingguCnt3" class="hexunHidden">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+  <tr>
+<th rowspan="2">财务能力<br/>(18年年度)</th>
+<th rowspan="2">评级</th>
+<th colspan="4" style="border-bottom:1px solid #ccc">排名</th>
+</tr>
+  <tr>
+    <th>标准</th>
+    <th>ICB</th>
+    <th>地域</th>
+    <th>市场</th>
+  </tr>
+<tr><td class="td_c">综合能力</td><td>★★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">8</td><td class="td_r">35</td></tr><tr><td class="td_c">盈利能力</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">3</td><td class="td_r">8</td></tr><tr><td class="td_c">偿债能力</td><td>★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">14</td><td class="td_r">75</td></tr><tr><td class="td_c">成长能力</td><td>★★</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">10</td><td class="td_r">59</td></tr><tr><td class="td_c">资产经营</td><td>☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">17</td><td class="td_r">121</td></tr><tr><td class="td_c">市场表现</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">2</td><td class="td_r">8</td></tr><tr><td class="td_c">投资收益</td><td>★★★★☆</td><td class="td_r">1</td><td class="td_r">1</td><td class="td_r">3</td><td class="td_r">8</td></tr>
+</table>
+</div>
+</div></td>
+</tr>
+</table>
+</dd>
+<dd style="border-top:3px solid #D8D8D8; padding-top:10px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zibiao_mainbox">
+<tr>
+<td  valign="top" style="width:375px; padding-left:10px">
+<style>
+.specialGuZhi th{font-weight:normal}
+.specialGuZhi td{line-height:30px; text-align:center}
+</style>
+<div style="border:1px solid #ccc; padding:4px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable specialGuZhi">
+<caption style="text-align:left; padding-left:4px"><strong>综合估值</strong></caption>
+<tr>
+<th style="line-height:50px;">估值区间</th>
+<th>昨日收盘价</th>
+<th>估值结果</th>
+</tr>
+<tr>
+<td style="line-height:50px;">30.98 - 34.24</td>
+<td>9.09</td>
+<td>低估</td>
+</tr>
+</table>
+</div></td>
+<td valign="top" class="zibiao_pic">
+<div style="border:1px solid #ccc; padding:4px; margin-right:10px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+<caption><strong>综合估值状态</strong></caption>
+<tr>
+<td>
+		
+		<div id="Div1">
+			<script>var stockCode = '000001';</script>
+			<script language="JavaScript" type="text/javascript" src="/js/flash/StockPriceAssessFlash.js"></script>
+			<noscript><a href="http://www.adobe.com/go/getflashplayer/">获得 Flash</a></noscript>
+		</div>
+		
+</td>
+</tr>
+</table>
+</div></td>
+</tr>
+</table>
+</dd>
+<dd style="border-top:3px solid #D8D8D8; padding-top:10px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zibiao_mainbox">
+<tr>
+<td  valign="top" style="width:375px; padding-left:10px">
+<div style="border:1px solid #ccc; padding:4px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+<caption><strong>财务预警(18年年度)</strong></caption>
+<tr>
+<th>指标</th>
+<th>得分</th>
+<th>财务风险可能</th>
+</tr>
+<tr>
+<td>Z计分</td>
+<td>-0.25</td>
+<td>财务存在风险</td>
+</tr>
+<tr>
+<td>财务困境得分</td>
+<td>0.00</td>
+<td>-</td>
+</tr>
+</table>
+<p style="line-height:24px">备注：Z记分是通过统计手段将重要的指标结合起来判断企业的运营状况；财务困境是通过逐步判别法来分析公司的财务状况
+</p>
+</div></td>
+<td valign="top" class="zibiao_pic">
+<div style="border:1px solid #ccc; padding:4px; margin-right:10px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pingGuTable" >
+<caption><strong>指标异常(18年年度)</strong><a href="StockExpList.aspx?code=000001" target="_blank">>>更多</a></caption>
+<tr>
+<th>异常指标</th>
+<th>异常描述</th>
+</tr>
+<tr><td>应付账款增长远超出营业收入增长</td><td>没有及时偿还债务，将来可能有更大的现金流出</td></tr><tr><td>应收账款增长远超出营业收入增长</td><td>财务政策可能过于激进</td></tr>
+</table>
+</div></td>
+</tr>
+</table>
+</dd>
+<dd style="border-top:3px solid #D8D8D8; padding-top:10px" class="hexunHidden">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="384" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="hangYePingGu">
+<caption  style="border-top:none"><strong>公司大事（企业重组和诉讼）</strong><a href="">>>更多</a></caption>
+<tr>
+<td class="shuJuTu"  height="230" valign="top" style="padding-right:10px">
+<ul class="list22px">
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+</ul></td>
+</tr>
+</table></td>
+<td style="padding-left:10px" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="hangYePingGu">
+<caption  style="border-top:none"><strong>公司新闻</strong><a href="">>>更多</a></caption>
+<tr>
+<td class="shuJuTu"  height="230" valign="top" style="padding-right:10px">
+<ul class="list22px">
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">权市再续走软行情 国安GAC1杀跌近15%</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+<li><span>09-12 12:23</span><a href="">快讯：包钢稀土再度涨停重新带动资源类个股走强</a></li>
+<li><span>09-12 12:23</span><a href="">港媒：李嘉诚表示长和系慎重考虑赴沪上市</a></li>
+</ul></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</dd>
+</dl>
+
+</div>
+<div class="clear"></div>
+</div>
+
+<div class=clear></div>
+</div>
+
+
+<div style="clear:both"></div>
+
+<link rel="stylesheet" type="text/css" href="http://img.hexun.com/standardfootandhead/2015/css/footer_v1.css" />
+<div class="footer_2014">
+	
+	<div class="bt_pd_nav clearfix">
+		 <dl class="pd_paths">
+		 	<dt><span>频<br/>道</span></dt>
+			<dd>
+				<p><a href="http://news.hexun.com/" target="_blank">新闻</a><a href="http://stock.hexun.com/" target="_blank">股票</a><a href="http://funds.hexun.com/" target="_blank">基金</a><a href="http://gold.hexun.com/" target="_blank" class="no_mr">黄金</a></p>
+				<p><a href="http://forex.hexun.com/" target="_blank">外汇</a><a href="http://futures.hexun.com/" target="_blank">期货</a><a href="http://insurance.hexun.com/" target="_blank">保险</a><a href="http://bank.hexun.com/" target="_blank" class="no_mr">银行</a></p>
+				<p><a href="http://money.hexun.com/" target="_blank">理财</a><a href="http://bond.hexun.com/" target="_blank">债券</a><a href="http://iof.hexun.com/" target="_blank">互金</a><a href="http://opinion.hexun.com/" target="_blank" class="no_mr">评论</a></p>
+			</dd>
+		 </dl>
+		 
+		 <dl class="jy_paths">
+		 	<dt><span>交<br/>易</span></dt>
+			<dd>
+				<p><a href="http://licaike.hexun.com/" target="_blank"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/lck_logo.jpg" /></a><a href="http://www.fangxinbao.com/" target="_blank"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/fxb_logo.jpg" /></a><a href="http://pxpt.hexun.com/index.html" target="_blank" class="no_mr"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/tzxy_logo.jpg" /></a></p>
+				<p class="jy_mt11"><a href="http://c.hexun.com/" target="_blank"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/clh_logo.jpg" /></a><a href="http://cpb.hexun.com/" target="_blank"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/cpb_logo.jpg" /></a><a href="http://p2p.hexun.com" target="_blank" class="no_mr"><img alt="" src="http://img.hexun.com/standardfootandhead/2015/img/p2p_logo.jpg" />
+</a></p>
+			</dd>
+		 </dl>
+		 
+		 <dl class="yd_paths">
+		 	<dt><span class="yd_i"></span></dt>
+			<dd>
+			<p><a href="http://3g.hexun.com/download_news/" target="_blank">财经新闻端</a><a href="http://3g.hexun.com/download_stock/" target="_blank">股票客户端</a><a href="http://3g.hexun.com/download_fund/" target="_blank" class="no_mr">基金客户端</a></p>
+				<p><a href="http://3g.hexun.com/download_forex/" target="_blank">外汇客户端</a><a href="http://3g.hexun.com/download_futures/" target="_blank">期货客户端</a><a href="http://3g.hexun.com/download_report/" target="_blank" class="no_mr">机构底牌</a></p>
+				<p><a href="http://3g.hexun.com/download_spot/" target="_blank">现货客户端</a><a href="http://3g.hexun.com/h5/" target="_blank">手机和讯网</a><a href="http://3g.hexun.com/download_gold/" target="_blank" class="no_mr">贵金属客户端</a></p> 
+			</dd>
+		 </dl>
+		 
+	</div>
+	
+	<div class="footerBox_2014"><a href="http://cvs.hexun.com/feedback/support.htm" target=_blank  id="hexunUserSuggest">和讯恭候您的意见</a> - <a href="http://corp.hexun.com/contact/index.html" target=_blank>联系我们</a> - <a href="http://corp.hexun.com/default/index.html" target=_blank>关于我们</a> - <a href="http://corp.hexun.com/adcenter/index.html" target=_blank>广告服务</a> 
+	<p><script type="text/javascript">document.write("违法和不良信息举报电话：010-85650899 传真：010-85650844 邮箱：yhts@staff.hexun.com");</script><br>本站郑重声明：和讯公司系政府批准的证券投资咨询机构[ZX0005]。所载文章、数据仅供参考，使用前请核实，风险自负。<br>Copyright 和讯网 和讯信息科技有限公司 All Rights Reserved 版权所有 复制必究</p></div>
+
+</div>
+
+<script src="http://news.hexun.com/js/count.js?date=200911261100"></script>
+<script src="http://utrack.hexun.com/track/track_hx.js"></script>
+<script src="http://img.hexun.com/js/inc_2015_new.js?date=201406191425"></script>
+<script type="text/javascript"> 
+(function(){
+	//全站通发广告
+	var reg=/\/\d{9}(_\d+)?.(html|html\?\w*)$/;		
+	if(reg.test(location.href)){
+	   document.write('<script type="text/javascript" src="http://itv.hexun.com/lbi-html/ly/2011/allPages/tempAd.js"><\/script>');
+	}
+})()
+</script>
+
+<script type="text/javascript" src="http://img.hexun.com/app/js/TB.main.js?20120222"></script>
+
+
+<!-- 缔元信代码 start -->
+<!-- START WRating v1.0 -->
+<script type="text/javascript" src="http://c.wrating.com/a1.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2918010100";
+var wrUrl="http://c.wrating.com/";
+vjTrack("");
+</script>
+<noscript><img src="http://c.wrating.com/a.gif?a=&c=860010-2918010100" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+
+<script language="JavaScript" type="text/javascript">
+//20140130 JakeChiu
+if (typeof(setCookUrl)=='undefined') {var setCookUrl = { lang: {}, params: {} }};
+setCookUrl = {
+getCookieJsonp:function (url, callback, jp_no) {
+var url = (url.indexOf('?') != -1) ? (url + '&') : (url + '?');
+var name = 'hxbase_json' + new Date().getTime()+''+Math.floor(Math.random()*10000000 + 1);
+if (typeof jp_no != 'undefined') name += jp_no;
+url += 'callback=' + name;
+window[name] = callback;
+var road = document.createElement('script');
+road.type = 'text/javascript';
+road.src = url;
+document.getElementsByTagName('head')[0].appendChild(road);
+if (road.readyState) {
+road.onreadystatechange = function () {
+if (road.readyState == 'loaded' || road.readyState == 'complete') {
+road.onreadystatechange = null;
+document.getElementsByTagName('head')[0].removeChild(road);
+window[name] = 'undefined';
+try { delete window[name]; }
+catch (e) { }
+}
+}
+}
+else {
+road.onload = function () {
+document.getElementsByTagName('head')[0].removeChild(road);
+window[name] = 'undefined';
+try { delete window[name]; }
+catch (e) { }
+}
+}
+},
+getCookieSid:function(key){
+	var aCookie = document.cookie.split(";");
+	for (var i=0; i < aCookie.length; i++){  
+			  var aCrumb = aCookie[i].split("=");  
+			  if (key === aCrumb[0].replace(/^\s*|\s*$/,"")){   
+							   return unescape(aCrumb[2]);
+			  }  
+} 
+},
+getCookieUserId:function(key)
+{
+	var aCookie = document.cookie.split(";");
+	for (var i=0; i < aCookie.length; i++){  
+			  var aCrumb = aCookie[i].split("=");  
+			  if (key === aCrumb[0].replace(/^\s*|\s*$/,"")){   
+			  return unescape(aCrumb[1]).split("|")[0];
+							//   return unescape(aCrumb[2]);
+			  }  
+	} 
+},
+getCookieUrl:function(type){
+var getsid = setCookUrl.getCookieSid("HexunTrack").split("&")[0];
+var getuse = 0;
+if(typeof(setCookUrl.getCookieUserId("userToken"))!="undefined" && setCookUrl.getCookieUserId("userToken")!="")
+{
+	getuse = setCookUrl.getCookieUserId("userToken");
+}
+var userid="";
+var cookieId="";
+//alert(getsid+"||"+getuse)
+var cookieUrl= "http://m.wrating.com/m.gif?a=&c=860010-2370010130&mcookie="
+var cookieUrl2= "http://m.wrating.com/m.gif?a=&c=860010-2370010131&mcookie="
+if(type=="sid")
+{
+	if(getsid!="" && getsid!="undefined")
+	{
+	return cookieUrl+getsid;
+	}else
+	{
+	return cookieUrl
+	}
+}
+if(type=="use")
+{
+	return cookieUrl2+getuse;	
+}
+},
+postCookieUrl:function()
+{
+var sidurl = setCookUrl.getCookieUrl("sid");
+var useurl = setCookUrl.getCookieUrl("use");
+setCookUrl.getCookieJsonp(sidurl);
+setCookUrl.getCookieJsonp(useurl);
+}
+};
+setCookUrl.postCookieUrl();
+</script>
+<!-- 缔元信代码 end -->
+
+</body>
+</html>
+
