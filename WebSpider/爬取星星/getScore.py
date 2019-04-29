@@ -8,7 +8,7 @@ import time
 
 if __name__ == '__main__':
     # 输入
-    df = pd.read_csv('result_score.csv',dtype=object,header=0,sep=',',encoding='UTF-8')
+    df = pd.read_csv('result.csv',dtype=object,header=0,sep=',',encoding='UTF-8')
     print(df)
     # head = df.columns
     # print(head)

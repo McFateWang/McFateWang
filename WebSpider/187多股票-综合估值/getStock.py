@@ -21,13 +21,14 @@ if __name__ == '__main__':
 
     urlBase = 'http://pinggu.stock.hexun.com/StockTotal.aspx?code='
     # for i in range(0, len(stockList)):
-    for i in range(150, 240):
+    for i in range(10, len(stockList)):
         # 休眠
         time.sleep(2)
 
         code = stockList[i]
         print(code)
         url = urlBase + code
+        
         # print(url)
         # 抓取
         req = requests.get(url, headers=headers)
@@ -35,15 +36,16 @@ if __name__ == '__main__':
         req.encoding = 'GBK'
         html = req.text 
         # 美丽汤
-        bf = BeautifulSoup(html, features='html.parser')
-        tr = bf.find_all('div', id = 'caiwupingguCnt1')[0].table.find_all('tr')
+        try:
+            bf = BeautifulSoup(html, features='html.parser')
 
-        for j in range(2,9):
-            name = tr[j].find_all('td')[0].text
-            score = tr[j].find_all('td')[1].text
-            # print(name, score)
-            df.iloc[i, j] = score
+            tr = bf.find_all(name='table', attrs = {'class': 'pingGuTable specialGuZhi'})[0].find_all('tr')
 
+            score = tr[1].find_all('td')[2].text
+            df.iloc[i, 2] = score
+        except:
+            print('wrong thing.')
+            df.iloc[i, 2] = 'null'
     # 输出
     df.to_csv('result.csv',index=False) 
     print('finished.')
