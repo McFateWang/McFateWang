@@ -128,7 +128,76 @@ class Index extends Component {
     }
 }
 
+const users = [
+    { username: '月半', age:22, gender: 'male'},
+    { username: '晗晗', age:22, gender: 'female'}
+]
+
+class User extends Component {
+    render () {
+        // 这里props是一个对象，so
+        // 方案1
+        // console.log(this.props.user)
+        // const  user  = this.props.user 
+        // 方案2
+        console.log(this.props)
+        const  {user}  = this.props     
+        console.log(user)
+        return (
+            <div>
+                <div>姓名：{user.username}</div>
+                <div>年龄：{user.age}</div>
+                <div>性别：{user.gender}</div>
+                <hr />
+                <hr />
+            </div>
+        )
+    }
+}
+
+class Map extends Component {
+    render () {
+        // const usersElements = []
+        // for( let user of users) {
+        //     usersElements.push(
+        //         <div>
+        //             <div>姓名：{user.username}</div>
+        //             <div>年龄：{user.age}</div>
+        //             <div>性别：{user.gender}</div>
+        //             <hr />
+        //         </div>
+        //     )
+        // }
+        
+        return (
+            <div>
+                {users.map(
+                    (user, i) => <User key={i} user={user} ></User>
+                )}
+            </div>
+        )
+
+        // return (
+        //     // <div>{usersElements}</div>
+        //     <div>
+        //         {users.map(
+        //             (user) => {
+        //                 return (
+        //                     <div>
+        //                         <div>姓名：{user.username}</div>
+        //                         <div>年龄：{user.age}</div>
+        //                         <div>性别：{user.gender}</div>
+        //                         <hr />
+        //                     </div>
+        //                 )
+        //             }
+        //         )}
+        //     </div>
+        // )
+    }
+}
+
 ReactDOM.render(
-    <Index />,
+    <Map />,
     document.getElementById('root')
 )

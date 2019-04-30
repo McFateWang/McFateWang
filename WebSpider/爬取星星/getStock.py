@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     urlBase = 'http://pinggu.stock.hexun.com/StockTotal.aspx?code='
     # for i in range(0, len(stockList)):
-    for i in range(50, 310):
+    for i in range(0, 187):
         # 休眠
         time.sleep(2)
 

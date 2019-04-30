@@ -27,5 +27,5 @@ if __name__ == '__main__':
     df = df.replace('☆', 0.5)
 
     # 输出
-    df.to_csv('result_score.csv',index=False) 
+    df.to_csv('result_score_187.csv',index=False) 
     print('finished.')
