@@ -14,6 +14,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import Mount from './Mount.js'
 
 class Header extends Component {
     renderGoodWord(goodWord, badWord) {
@@ -198,6 +199,6 @@ class Map extends Component {
 }
 
 ReactDOM.render(
-    <Map />,
+    <Mount />,
     document.getElementById('root')
 )
