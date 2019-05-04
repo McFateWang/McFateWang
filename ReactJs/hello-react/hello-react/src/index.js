@@ -14,7 +14,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Mount from './Mount.js'
+import Mount from './mysrc/Mount.js'
+import Clock from './mysrc/Clock.js'
 
 class Header extends Component {
     renderGoodWord(goodWord, badWord) {
@@ -106,7 +107,7 @@ class Index extends Component {
         myFlag: '1'
     }
 
-    myClick () {
+    myClick() {
         console.log('有名字的函数')
     }
 
@@ -117,32 +118,32 @@ class Index extends Component {
                 <Main></Main>
                 <LikeButton likedText='已赞' unlikedText='取消' />
                 <p>{this.props.myFlag}</p>
-                <LikeButton 
-                    likedText='胖胖' unlikedText='晗晗' 
+                <LikeButton
+                    likedText='胖胖' unlikedText='晗晗'
                     onClick={
                         // () => console.log('传入的函数!!!')
                         this.myClick
                     }
-                    />
+                />
             </div>
         )
     }
 }
 
 const users = [
-    { username: '月半', age:22, gender: 'male'},
-    { username: '晗晗', age:22, gender: 'female'}
+    { username: '月半', age: 22, gender: 'male' },
+    { username: '晗晗', age: 22, gender: 'female' }
 ]
 
 class User extends Component {
-    render () {
+    render() {
         // 这里props是一个对象，so
         // 方案1
         // console.log(this.props.user)
         // const  user  = this.props.user 
         // 方案2
         console.log(this.props)
-        const  {user}  = this.props     
+        const { user } = this.props
         console.log(user)
         return (
             <div>
@@ -157,7 +158,7 @@ class User extends Component {
 }
 
 class Map extends Component {
-    render () {
+    render() {
         // const usersElements = []
         // for( let user of users) {
         //     usersElements.push(
@@ -169,7 +170,7 @@ class Map extends Component {
         //         </div>
         //     )
         // }
-        
+
         return (
             <div>
                 {users.map(
@@ -198,7 +199,33 @@ class Map extends Component {
     }
 }
 
+class Layout extends Component {
+    render() {
+        console.log(this.props.children)
+        return (
+            <div className='two-cols-layout'>
+                <div className='sidebar'>
+                    {this.props.children[0]}
+                </div>
+                <div className='main'>
+                    <h1>{this.props.children[1]}</h1>
+                </div>
+            </div>
+        )
+    }
+}
+
+
 ReactDOM.render(
-    <Mount />,
+    // <Clock />,
+    <Layout>
+        <div>
+            <p>侧边栏</p>
+        </div>
+        测试
+        <div>
+            <p>主题栏</p>
+        </div>
+    </Layout>,
     document.getElementById('root')
 )
