@@ -1,7 +1,7 @@
 # McFateWang
 学习技术，自己独自做的小项目
 
-## HHanHanGraduation
+## HanHanGraduation
 - 晗晗毕业设计的贝叶斯统计的python代码
 - pandas+数据处理+xlsx文件读写
 - juypter
