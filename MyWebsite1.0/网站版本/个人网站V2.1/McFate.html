@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<!-- 移动网站适应 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jquery JS -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- bootstrap JS -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- 网站标题 -->
+	<title>McFateWang</title>
+	<!-- 网站LOGO -->
+	<link rel="icon" href="item/ico_w.ico" type="image/x-icon"/>
+</head>
+<body style="padding-top: 50px">
+
+	<!-- 导航栏nav navbar-inverse 风格navbar-fixed-top使其固定在顶部，因此body需要50px的内边距-->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid"> 
+			<div class="navbar-header">
+				<!-- 折叠起来的导航栏 toggle切换功能 3行span显示3横线的按钮-->
+				<button id="wj-nav-dropdown" type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#my-navbar">
+					<!--<span class="sr-only">切换导航</span>-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<!-- 三个icon-bar用于变成折叠后的元素 -->
+				</button>
+				<!--<img src="item/ico_w.ico" class="navbar-brand" style="margin-right: 0px">-->
+				<!-- 导航栏的标题 -->
+				<img src="item/ico_w.ico" class="navbar-brand" alt="logo">
+				<a class="navbar-brand" href="#">
+					McFateWang
+				</a>
+				<!-- 导航栏中的文字 -->
+				<p class="navbar-text">不做无法实现的梦</p>
+			</div>
+			<!-- 以下是可以被折叠的内容 -->
+			<div class="collapse navbar-collapse" id="my-navbar">
+				<!-- 相间的列表栏,点击选项将内嵌到不同的子页面 -->
+				<ul id="wjTab" class="nav navbar-nav">
+					<li class="active"><a href="#wj-page-main" data-toggle="tab">首页</a></li>
+					<li><a href="#wj-page-experience" data-toggle="tab">个人经历</a></li>
+					<li><a href="#wj-page-study" data-toggle="tab">学习心得</a></li>
+					<li><a href="#wj-page-website" data-toggle="tab">建站日志</a></li>
+					<li><a href="#wj-page-contact" data-toggle="tab">联系作者</a></li>
+					<li><a href="#wj-page-form" data-toggle="tab">给我留言</a></li>
+					<li><a href="old_website/menu.html">旧版网站</a></li>
+				</ul>
+				<!-- 放置在最右侧的按钮 -->
+				<!-- <button type="button" class="btn btn-default navbar-btn navbar-right">旧版网站</button> -->
+			</div>
+		</div>
+	</nav>
+
+	<!-- 以下是子页面的框架 -->
+	<div id="wjTabContent" class="tab-content">
+
+		<!-- 子页面 首页内容 -->
+		<div class="tab-pane fade in active" id="wj-page-main">
+			<!-- 主界面 -->
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="jumbotron">
+					<h1>欢迎，我的朋友！</h1>
+					<p>
+						这是一个使用Bootstrap框架编写的个人网站，创建于2018年8月，成形于2018年10月。<br>当前版本是V2.2.0，添加了几种流畅的动画过渡效果。
+					</p>
+					<p><a class="btn btn-primary btn-large" href="#wj-page-contact" data-toggle="tab">联系作者</a></p>
+				</div>
+				<!-- 3段一列4 4 4 -->
+				<div class="row">
+				<div class="col-md-4">
+				<div class="thumbnail">
+					<img alt="300x200" src="item/back_red.jpg" />
+					<div class="caption">
+						<h3>个人经历</h3>
+						<p>
+							My name is WangJie , graduated from JianXing Honors College of Zhejiang University of Technology，and I major in Computer Science and Technology.
+						</p>
+						<p><a class="btn btn-primary" href="#wj-page-experience"  data-toggle="tab">前往</a></p>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="thumbnail">
+					<img alt="300x200" src="item/back_blue.jpg" />
+					<div class="caption">
+						<h3>学习心得</h3>
+						<p class="card-text">
+							I have taken part in the mathematical modeling contest.In the competition, I learned how to analyze problems, how to design the solution, and how to communicate with the team.
+						</p>
+						<p>
+							<a class="btn btn-primary" href="#wj-page-study" data-toggle="tab">前往</a>
+						</p>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="thumbnail">
+					<img alt="300x200" src="item/back_green.jpg" />
+					<div class="caption">
+						<h3>建站日志</h3>
+						<p>
+							In my spare time, I like to use different programming languages to show my idea. I rented a server from Aliyun and built my own personal website, which can be accessed by anyone on the Internet.
+						</p>
+						<p><a class="btn btn-primary" href="#wj-page-website" data-toggle="tab">前往</a></p>
+					</div>
+				</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 子页面 个人经历-->
+		<div class="tab-pane fade" id="wj-page-experience">
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<!-- 标题栏 -->
+				<div class="page-header">
+					<h1>
+						个人经历 <small>长路漫漫，有幸与你于此刻相逢</small>
+					</h1>
+				</div>
+				<!-- 手风琴切换 -->
+				<div class="panel-group" id="wjpanel-1">
+					<!-- 面板 标题栏的href指向内容栏的div的id-->
+					<div class="panel panel-default">
+						<!-- 子面板 标题栏data-toggle="collapse"即折叠形式 父亲是panel-group 指向内容栏 -->
+						<div class="panel-heading">
+							 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#wjpanel-1" href="#wjpanel-ele-introduce">个人介绍</a>
+						</div>
+						<!-- 子面板 标题栏的href指向内容栏的div的id-->
+						<div id="wjpanel-ele-introduce" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<!-- 多媒体对象 -->
+								<div class="media">
+									<div class="media-left media-top">
+										<img src="item/img_1.jpg" class="media-object img-thumbnail img-responsive" style="width: 100px" alt="my picture">
+									</div>
+									<div class="media-body">
+										<h3 class="media-heading">McFate Wang 王杰</h3>
+										<p class="lead">我现就读于浙江工业大学健行学院计算机科学与技术专业，目前于浙江大学紫金港校区实验室参加研究项目。</p>
+									</div>
+								</div><hr>
+								<p class="lead">
+									小时候喜欢阅读科幻书籍，喜爱想象书中有具体数字的物体；小学时自己在A4纸上设计游戏（那时候风靡GBA上的口袋妖怪），初中时语文课每周要交一篇作文，将班上所有同学的名字当做素材写成了连载小说（奇幻冒险RPG风格~）。</p>
+									<blockquote>
+  									工具——三把多开的小刀，两把砍柴斧，两把木工斧，三个刨子，两个锛子，一把鹤嘴锄……
+  									<small>儒勒·凡尔纳 《神秘岛》</small>
+									</blockquote>
+								<p class="lead">
+									于大一开始接触编程知识，在课程中学习了<span class="text-primary"> C/C++,MATLAB,Java,SQL,Linux&nbsp;</span>
+									课外自学了<span class="text-primary">Python,HTML,CSS,JS,QT&nbsp;</span>对于数据挖掘、数据分析、数学建模比较熟悉，对于前端开发比较感兴趣，现正在研究数据可视化。
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- 另一个子面板 -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#wjpanel-1" href="#wjpanel-ele-game">竞赛经历</a>
+						</div>
+						<div id="wjpanel-ele-game" class="panel-collapse  collapse">
+							<div class="panel-body">
+								<p class="lead">以下列举了几项自己觉得比较<strong>有意思/重要</strong>的竞赛信息~</p>
+								<hr>
+								<!-- 列表-斑马条纹-鼠标悬停显示状态 响应式-->
+								<table class="table  table-striped table-hover table-responsive">
+									<thead>
+										<tr>
+											<th>时间</th>
+											<th>名称</th>
+											<th>获奖级别</th>
+											<th>主办单位</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="success">
+											<td>2018.02</td>
+											<td>美国大学生数学建模竞赛</td>
+											<td>国际一等奖</td>
+											<td>美国数学及应用联合会</td>
+										</tr>
+										<tr class="info">
+											<td>2017.09</td>
+											<td>“高教社杯”全国大学生数学建模竞赛</td>
+											<td>国家二等奖</td>
+											<td>中国工业与应用数学协会</td>
+										</tr>	
+										<tr class="success">
+											<td>2018.09</td>
+											<td>“量子杯”全国高校量化大赛</td>
+											<td>月最佳收益奖</td>
+											<td>量子金服</td>
+										</tr>																		
+										<tr class="info">
+											<td>2017.01</td>
+											<td>浙江省大学生物理创新竞赛</td>
+											<td>省二等奖</td>
+											<td>浙江省物理协会</td>
+										</tr>					
+										<tr class="success">
+											<td>2017.05</td>
+											<td>浙江工业大学校数学建模竞赛</td>
+											<td>校一等奖</td>
+											<td>浙江工业大学</td>
+										</tr>																	
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- 另一个子面板 -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#wjpanel-1" href="#wjpanel-ele-science">科研经历</a>
+						</div>
+						<div id="wjpanel-ele-science" class="panel-collapse  collapse">
+							<div class="panel-body">
+								<p class="lead">有待补充~</p>
+								<hr>
+							</div>
+						</div>
+					</div>					
+					<!-- 另一个子面板 -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							 <a class="panel-title" data-toggle="collapse" data-parent="#wjpanel-1" href="#wjpanel-ele-job">实践经历</a>
+						</div>
+						<div id="wjpanel-ele-job" class="panel-collapse  collapse">
+							<div class="panel-body">
+								<p class="lead">有待补充~</p>
+								<hr>
+							</div>
+						</div>
+					</div>
+					<!--子面板结束 -->
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 子页面 学习心得-->
+		<div class="tab-pane fade" id="wj-page-study">
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<!-- 标题栏 -->
+				<div class="page-header">
+					<h1>
+						学习心得 <small>学习永无止境，为了我，为了你，为了TA。</small>
+					</h1>
+				</div>
+				<!-- 面板，蓝色，包括title body footer -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							学习心得01
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="page-header">
+							<h1>
+								热爱数学建模 <small>这辈子再也不参加了（...真香！）</small>
+							</h1>
+						</div>
+						<p class="lead">
+							 &nbsp;&nbsp;本科期间，我最为投入的比赛就是<strong>数学建模</strong>比赛了。
+							 起初我参加<strong>ACM</strong>时并未接触过数模，觉得连续3天3夜奋战很可怕，而敬而远之。
+							 转机是大二时<strong>健行学院</strong>开了必修的数模课程，并组队参加了校赛，
+							 我发现自己有点喜欢数模形式的建模、编程及写作，同时也为了争取<strong>竞赛保研</strong>的机会，于是坚持了下去。
+							 <br>&nbsp;&nbsp;最终我和队友们坚持了一整个暑假参加了<strong>国赛，</strong>坚持了一整个寒假参加了<strong>美赛。</strong>
+							 从大二之后，我就没有度过一个完整的假期<small>（因此还没学出驾照= =，其实是懒）</small>，好在上天眷顾，能以一种较为轻松的方式完成<strong>保研升学，</strong>因此能在此时有余力学习建设网站。
+							 <br>&nbsp;&nbsp;如果上天再给我一次机会，我还是会毅然地参加数模，
+							 但是好在从今以后，我再也不会去参加了<small>（真香警告）</small>。
+						</p>
+					</div>
+					<div class="panel-footer text-right">
+						编辑于2018-10-17 19:05
+					</div>
+				</div>
+				<!-- 面板，蓝色，包括title body footer -->
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							学习心得02
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="page-header">
+							<h1>
+								导航条菜单<small>建站技术详解01</small>
+							</h1>
+						</div>
+						<p class="lead">
+							 &nbsp;&nbsp;当点击导航条的菜单按钮时将跳出下拉菜单，此时点击屏幕任何位置都将隐藏下拉菜单，以便用户的操作。<br>
+							 &nbsp;&nbsp;具体的代码如下，参考至 <a href="http://www.aijquery.cn/Html/jquerytexiao/63.html">爱jQuery</a> 。
+							 <br><hr>
+							<img src="item/code_1.jpg" class="img-thumbnail img-responsive"  alt="code_1">
+						</p>
+					</div>
+					<div class="panel-footer text-right">
+						编辑于2018-10-18 10:44
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 子页面 建站日志-->
+		<div class="tab-pane fade" id="wj-page-website">
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<!-- 标题栏 -->
+				<div class="page-header">
+					<h1>
+						建站日志 <small>聚沙成塔，集腋成裘。</small>
+					</h1>
+				</div>
+				<!-- 列表-斑马条纹-鼠标悬停显示状态 响应式-->
+				<table class="table  table-striped table-hover table-responsive">
+					<thead>
+						<tr>
+							<th>时间</th>
+							<th>事件</th>
+							<th>备注</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="success">
+							<td>2018.08.22</td>
+							<td>发布个人网站V1.1</td>
+							<td>只使用了HTML，只能本地访问，萌生了购买服务器服务的想法</td>
+						</tr>
+						<tr>
+							<td>2018.08.22</td>
+							<td>试用阿里云服务器服务</td>
+							<td>免费试用1个月,学习如何配置IP服务</td>
+						</tr>		
+						<tr>
+							<td>2018.08.26</td>
+							<td>更新个人网站V1.2；开通IP全网访问</td>
+							<td>使用了HTML，CSS，配置FTP服务失败了，在服务器上下载了QQ用于传输网站文件</td>
+						</tr>	
+						<tr>
+							<td>2018.09</td>
+							<td>购买域名<a href="http://www.wangjie-zjut.top">wangjie-zjut.top</a>；申请备案</td>
+							<td>域名第一年有效期售价¥5.00~~可以说是很便宜了</td>
+						</tr>			
+						<tr>
+							<td>2018.09</td>
+							<td>购买阿里云服务器服务</td>
+							<td>学生优惠价¥99.00第一年~</td>
+						</tr>	
+						<tr>
+							<td>2018.10.14</td>
+							<td>更新个人网站V1.3</td>
+							<td>使用了JS，重新整合界面</td>
+						</tr>						
+						<tr class="success">
+							<td>2018.10.17</td>
+							<td>发布个人网站V2.1</td>
+							<td>使用了jQuery，Bootstrap，具有更精致美观的交互式界面，在PC端和移动端都能适配屏幕执行</td>
+						</tr>
+						<tr>
+							<td>2018.10.17</td>
+							<td>开通域名服务</td>
+							<td>备案通过，可以使用域名访问网站</td>
+						</tr>				
+						<tr>
+							<td>2018.10.18</td>
+							<td>更新个人网站V2.2</td>
+							<td>替换了部分文本内容，优化了建站日志，优化了联系作者,增加了返回按钮的动画效果，优化子页面切换的效果</td>
+						</tr>	
+					</tbody>
+				</table>		
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 子页面 联系作者-->
+		<div class="tab-pane fade" id="wj-page-contact">
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<!-- 标题栏 -->
+				<div class="page-header">
+					<h1>
+						联系作者 <small>数昔日黄花，盼明日再会</small>
+					</h1>
+				</div>
+				<div>
+					<h1><small>QQ邮箱</small></h1>
+					<p class="lead">&nbsp;&nbsp;1440306298@qq.com</p>
+					&nbsp;&nbsp;<a class="btn btn-primary" href="https://mail.qq.com/">立刻发送QQ邮件</a>
+				</div>
+				<div><hr>
+					<h1><small>微信</small></h1>
+					<p class="lead">&nbsp;&nbsp;微信号：mcfate123456</p>
+				</div>
+				&nbsp;&nbsp;
+				<!-- 点击按钮触发遮罩事件 data-toggle="modal"模态框 data-target指向跳出窗体-->
+				<button class="btn btn-success" data-toggle="modal" data-target="#wjmodal-1">获取微信二维码</button>
+				<!-- 跳出的窗体，fade淡入淡出 role为dialog  aria-hidden="true"-->
+				<div class="modal fade" id="wjmodal-1" tabindex="-1" role="dialog" aria-labelledby="wjmodal-label" aria-hidden="true">
+				    <div class="modal-dialog">
+				        <div class="modal-content">
+				            <div class="modal-header"><!-- 窗体的头部 -->
+				            	<!-- 右上方的close按钮，用于关闭跳出的窗体 -->
+				                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				                <h4 class="modal-title" id="wjmodal-label">我的微信二维码</h4>
+				            </div>
+				            <div class="modal-body text-center"><!-- 窗体的内容 -->
+				            	<img src="item/weixin.jpg" width="234" height="300" alt="weixin.jpg">
+				            </div>
+				            <div class="modal-footer"><!-- 窗体的尾部 -->
+				                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				                <button type="button" class="btn btn-primary">我已知晓</button>
+				            </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal -->
+				</div>
+				<div><hr>
+					<h1><small>GitHub</small></h1>
+					<p class="lead">&nbsp;&nbsp;关注：github.com/McFateWang</p>
+					&nbsp;&nbsp;<a class="btn btn-info" href="https://github.com/McFateWang">访问月半SSS的GitHub</a>
+				</div>
+				<div><hr>
+					<h1><small>CSDN</small></h1>
+					<p class="lead">&nbsp;&nbsp;关注：me.csdn.net/qq_38340079</p>
+					&nbsp;&nbsp;<a class="btn btn-warning" href="https://me.csdn.net/qq_38340079">访问月半SSS的CSDN</a>
+				</div>
+				<div><hr>
+					<h1><small>通讯地址</small></h1>
+					<p class="lead">&nbsp;&nbsp;浙江省杭州市西湖区留和路288号浙江工业大学屏峰校区东10，王杰收
+						<br>&nbsp;&nbsp;邮编：310023</p>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+		<!-- 子页面 给我留言-->
+		<div class="tab-pane fade" id="wj-page-form">
+			<div class="container">
+			<div class="row clearfix">
+			<div class="col-md-12 column">
+				<!-- 标题栏 -->
+				<div class="page-header">
+					<h1>
+						给我留言 <small>以人为鉴,可以明得失</small>
+					</h1>
+				</div>
+				<!-- 留言表单 -->
+				<form role="form" action="/flask_post_form" method="post" name="wjform" target="new" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="name">你的昵称</label>
+						<input type="text" class="form-control" name="wj-name" placeholder="请输入昵称" required="required">
+					</div>
+					<div class="form-group">
+						<label for="sex">你的性别</label><br>
+						<label class="radio-inline"><input type="radio" name="sex" value="man" checked>男</label>
+						&nbsp;&nbsp;
+						<label class="radio-inline"><input type="radio" name="sex" value="woman">女</label>
+					</div>
+					<div class="form-group">
+						<label for="word">你的留言</label>
+						<textarea  class="form-control" name="wj-word" placeholder="请输入你的留言" required="required" rows="8"></textarea>
+					</div>		
+					<button type="reset" class="btn btn-default">清空</button>
+					<button type="submit" class="btn btn-success">提交留言</button>			
+				</form>
+			</div>
+			</div>
+			</div>
+		</div>
+		<!-- 主要切换界面底部-->
+	</div>
+
+	<!-- 返回按钮 -->
+	<hr>
+	<div class="text-center">
+		<a class="btn btn-link" href="javascript:;" id="wj-backtoTop">
+			<span class="glyphicon glyphicon-chevron-up"></span>&nbsp;&nbsp;返回顶部
+		</a>
+	</div>
+	<br>
+
+	<!-- 底部建站消息 -->
+	<div class="footer text-center" style="background-color: #eee;padding: 15px;">
+		<a href="http://www.miitbeian.gov.cn/">
+			<span class=" text-muted">浙ICP备18044375号</span>
+		</a>
+		<br>
+		<a href="#">
+			<span class=" text-muted">感谢赞助商<strong>一只小傲娇</strong>的支持！</span>
+		</a>
+		<br>
+		<p style="font-size: 18px;">
+			Designed by McFateWang
+			<br>
+			Copyright &copy; 2018-2019 wangjie-zjut.top. All Rights Reserved.
+		</p>
+	</div>
+
+	<!-- DIY JS -->
+	<script src="McFate_js.js"></script>
+
+</body>
+</html>    

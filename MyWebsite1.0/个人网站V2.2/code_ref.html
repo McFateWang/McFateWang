@@ -1,0 +1,319 @@
+<!-- 下拉菜单 dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Java <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">jmeter</a></li>
+							<li><a href="#">EJB</a></li>
+							<li><a href="#">Jasper Report</a></li>
+							<li class="divider"></li>
+							<li><a href="#">分离的链接</a></li>
+							<li class="divider"></li>
+							<li><a href="#">另一个分离的链接</a></li>
+						</ul>
+					</li>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 一个简单的网页</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+    .fakeimg {
+        height: 200px;
+         background: #aaa;
+    }
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>我的第一个 Bootstrap 页面</h1>
+  <p>重置浏览器窗口大小查看效果！</p> 
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">网站名</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页</a></li>
+        <li><a href="#">页面 2</a></li>
+        <li><a href="#">页面 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>关于我</h2>
+      <h5>我的照片:</h5>
+      <div class="fakeimg">这边插入图像</div>
+      <p>关于我的介绍..</p>
+      <h3>链接</h3>
+      <p>描述文本。</p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">链接 1</a></li>
+        <li><a href="#">链接 2</a></li>
+        <li><a href="#">链接 3</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    <div class="col-sm-8">
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+      <br>
+      <h2>标题</h2>
+      <h5>副标题</h5>
+      <div class="fakeimg">图像</div>
+      <p>一些文本..</p>
+      <p>菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>底部内容</p>
+</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 标签页（Tab）插件</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<ul id="myTab" class="nav nav-tabs">
+	<li class="active">
+		<a href="#home" data-toggle="tab">
+			 菜鸟教程
+		</a>
+	</li>
+	<li><a href="#ios" data-toggle="tab">iOS</a></li>
+	<li class="dropdown">
+		<a href="#" id="myTabDrop1" class="dropdown-toggle" 
+		   data-toggle="dropdown">Java 
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+			<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+			<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+		</ul>
+	</li>
+</ul>
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade in active" id="home">
+		<p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+	</div>
+	<div class="tab-pane fade" id="ios">
+		<p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+			TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+	</div>
+	<div class="tab-pane fade" id="jmeter">
+		<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+	</div>
+	<div class="tab-pane fade" id="ejb">
+		<p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
+	<!-- 导航栏nav navbar-inverse 风格navbar-fixed-top使其固定在顶部，因此body需要50px的内边距-->
+	<nav class="navbar navbar-default
+	navbar-fixed-top" role="navigation">
+		<div class="container-fluid"> 
+			<div class="navbar-header">
+				<!-- 折叠起来的导航栏 toggle切换功能 -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#my-navbar">
+					<!--<span class="sr-only">切换导航</span>-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<!-- 三个icon-bar用于变成折叠后的元素 -->
+				</button>
+				<!--<img src="item/ico_w.ico" class="navbar-brand" style="margin-right: 0px">-->
+				<!-- 导航栏的标题 -->
+				<img src="item/ico_w.ico" class="navbar-brand">
+				<a class="navbar-brand" href="#"">McFate Wang</a>
+				<!-- 导航栏中的文字 -->
+				<p class="navbar-text">不做无法实现的梦</p>
+			</div>
+			<!-- 以下是可以被折叠的内容 -->
+			<div class="collapse navbar-collapse" id="my-navbar">
+				<!-- 相间的列表栏 -->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">个人经历</a></li>
+					<li><a href="#">学习心得</a></li>
+					<li class="active"><a href="#">建站经历</a></li>
+					<li><a href="#">联系作者</a></li>
+				</ul>
+				 <button type="button" class="btn btn-default navbar-btn navbar-right">旧版网站</button>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+		<ul id="myTab" class="nav nav-tabs">
+		<li class="active">
+			<a href="#home" data-toggle="tab">
+				 菜鸟教程
+			</a>
+		</li>
+		<li><a href="#ios" data-toggle="tab">iOS</a></li>
+		<li class="dropdown">
+			<a href="#" id="myTabDrop1" class="dropdown-toggle" 
+			   data-toggle="dropdown">Java 
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+				<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+				<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+		<div class="tab-pane fade in active" id="home">
+			<p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+		</div>
+		<div class="tab-pane fade" id="ios">
+			<p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+				TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+		</div>
+		<div class="tab-pane fade" id="jmeter">
+			<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+		</div>
+		<div class="tab-pane fade" id="ejb">
+			<p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+			</p>
+		</div>
+	</div>
+
+<div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+
+<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>
+							编号
+						</th>
+						<th>
+							产品
+						</th>
+						<th>
+							交付时间
+						</th>
+						<th>
+							状态
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="error">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="info">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>

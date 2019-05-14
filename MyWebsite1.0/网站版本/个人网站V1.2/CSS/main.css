@@ -1,0 +1,77 @@
+body {
+	background-image: url('item/back3.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #CCCCCC;
+	
+}
+
+h1 {
+      color: black;
+      font-size: 48px;
+      text-shadow: 3px 3px 1.5px #666666;
+      text-align: center;
+    }
+
+h2,h3,h4,h5,h6{
+	 	color: black;
+	    text-align: left;
+}
+
+h3,h4,h5,h6{
+	font-size: 20px;
+}
+
+p {
+	text-indent: 4em;
+	font-size: 20px;
+	text-align: left;
+}
+
+p.h {
+	font-size: 20px;
+	text-align: left;
+	margin-left: 2cm;
+	font-weight: bold;
+}
+
+a.right{
+	display:block;
+	text-align:right;
+}
+
+a {
+	  font-size: 20px;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited{
+	color: purple;
+	text-decoration: none;
+}
+a:hover {
+    color: #ff7f24;
+    text-decoration: underline;
+}
+a:active {
+    color: #ff7f24;
+    text-decoration: underline;
+}
+
+.l1 {
+	margin-left: 1cm;
+}
+
+.l2 {
+	margin-left: 2cm;
+}
+
+ul.list {
+	list-style-type: disc;
+	font-size: 20px;
+	color: blue;
+}

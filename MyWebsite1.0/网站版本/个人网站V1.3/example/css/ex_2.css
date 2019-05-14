@@ -1,0 +1,200 @@
+/*
+* CSS  - style.css
+*/
+
+/* 说明如下 
+标签选择器 
+body  header  div  h3  p
+
+类选择器
+p.p-class  td.td-small
+<p class="p-class">
+
+id选择器
+form#id-form
+<form id="id-form">
+
+派生选择器：特定标签元素内的标签元素
+div h3  table th
+包括如下：
+	1.后代选择器(包含选择器)：可以跨越多个标签
+	ul em
+	<ul> ...<li>... <li><em>XXX</em></li>
+	2.子选择器：仅仅第一级后代标签
+	ul > li
+	<ul><li>...
+	3.相邻兄弟选择器:作用于相邻的后者
+	h4 + h4
+	<h4><h4><h4> 后面两个h4格式变化
+
+属性选择器
+包括如下：
+	1.属性选择器：
+	[title] {}
+	<h3 title="selector">
+	2.属性和值选择器：
+	[title=value] {}
+	<h3 title="value">
+	3.属性和多个值选择器：
+	[title~=value] 空格间隔 title="value attribute"
+	[lang|=ch] 连字间隔 lang="ch-zn"
+	4.子串匹配属性选择器：
+	p[title^="www"] www开头 
+	p[title$="com"] com结尾
+	p[title*="value"] value包含
+	5.表单属性选择器：
+	input[type="text"]
+
+伪类选择器
+a:link 未被访问
+a:visited 已被访问
+a:hover 鼠标移动到
+a:active 地址被选定
+
+input:focus 获得输入焦点时
+
+p:first-child 父元素中的第一个子元素
+*/
+
+body {
+	background-image: url('item/back_red.jpg'); /* 设置背景图片 */
+	background-position: left top;  /* 设置背景图片相对屏幕位置 */
+	background-repeat: repeat; /* 设置图像是否重复 */
+	background-attachment: fixed; /* 设置滑动格式 */
+	background-size: contain;  /* 背景图片尺寸和屏幕相同 */
+	font-family: 'Microsoft YaHei';  /* 设置字体格式 */
+} 
+
+header h1 { /* 派生css */
+	text-align: center;
+}
+
+/* 表单格式 */
+form#id-form {  /* idcss */
+	border: 0px solid blue;
+	width: 80%;
+	/*background-color: rgba(0,0,0,0.3);*/
+	background-color: #f8f8f8;
+
+	margin: 8px;
+	padding: 8px;
+}
+
+/* 表格 */
+table {
+	border: 0px solid red;
+	font-size: medium;
+
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+	text-align: center;
+}
+
+/* 表格的标题 */
+table caption{  
+	font-size: larger;  /* 字体大小，默认medium */
+	font-weight: bold;  /* 字体粗细 */
+	color: black;  /* 字体颜色 */
+
+	letter-spacing: 2px;  /* 字与字的间距 */
+	margin: 8px; 	 /* 与外部其他容器的外边距 上-右-下-左 */
+	padding: 8px;   /* 与内部其他容器的内边距 上-右-下-左 */
+	text-align: center;  /* 排列方式，居中 */
+}
+
+/* 表格的题头 */
+tr > th{
+	font-size: small;
+	font-weight: bold;
+	color: blue;
+
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+	text-align: left;
+}
+
+/* 注释字体 */
+table td.td-small {  
+	font-size: small;
+	font-family: Verdana;
+	color: #808080;
+
+	letter-spacing: 1px;
+	margin: 8px;
+	padding: 8px;
+	text-align: left;
+}
+
+span {
+	font-size: small;
+}
+
+/* 提交按钮样式 */
+table td.button {
+	text-align: right;
+
+	letter-spacing: 2px;
+	margin: 8px;
+	padding: 8px;
+}
+
+/* 单行内警告字体 */
+span.warning {
+	font-weight: bold;
+	color: red;
+}
+
+/* input标签 */
+input:focus {
+	background-color: #f0f0f0;
+}
+
+input[type='text'] {
+	width: 200px;
+	font: normal 20px/1.6em;
+}
+
+input[type='password'] {
+	width: 200px;
+}
+
+input[type='email'] {
+	width: 200px;
+}
+
+input[type='month'] {
+	width: 200px;
+}
+
+input[type='url'] {
+	width: 200px;
+}
+
+input[type='reset'] {
+	width: 100px;
+}
+
+input[type='submit'] {
+	width: 100px;
+}
+
+/* 链接样式 */
+a:link {
+	color: blue;
+	/*#00FF00;*/
+}
+
+a:visited {
+	color: blue;
+	/*color: #FF0000;*/
+}
+
+a:hover {
+	color: #FF00FF;
+}
+
+a:active {
+	color: #0000FF;
+}

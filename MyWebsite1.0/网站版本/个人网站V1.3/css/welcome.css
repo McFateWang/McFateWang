@@ -1,0 +1,37 @@
+body {
+	background-image: url('item/back_blue.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #CCCCCC;
+
+}
+
+h1 {
+      color: black;
+      font-size: 48px;
+      text-shadow: 3px 3px 3px #666666;
+      text-align: center;
+    }
+a {
+	  color: black;
+	  font-style: normal;
+	  text-align: center;
+	  font-size: 30px;
+	  text-decoration: none;
+	  text-shadow: 3px 3px 3px #666666;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none
+}
+a:hover {
+    color: #ff7f24;
+    text-decoration: underline;
+}
+a:active {
+    color: #ff7f24;
+    text-decoration: underline;
+}

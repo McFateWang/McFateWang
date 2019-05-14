@@ -1,0 +1,102 @@
+body {
+	padding-left: 10%;
+	padding-right: 10%;
+	background-image: url('item/background.png'); /* 设置背景图片 */
+	background-position: left top;  /* 设置背景图片相对屏幕位置 */
+	background-repeat: no-repeat; /* 设置图像是否重复 */
+	background-attachment: fixed; /* 设置滑动格式 */
+	background-size: cover;  /* 背景图片尺寸和屏幕相同 */
+}
+
+div.wj_box {
+	padding-left: 20px;
+	padding-right: 20px;
+	/* background-color: rgba(0,0,0,0.2);  */
+}
+
+div.wj_header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* background-color: rgba(0,0,0,0.2); */
+	/* background-color: #b5d7fc; */
+}
+
+div.wj_page {
+	/* background-image: url('item/gray.jpg'); /* 设置背景图片 */
+	background-color: #ccc;
+	background-position: left top;  /* 设置背景图片相对屏幕位置 */
+	background-repeat: repeat; /* 设置图像是否重复 */
+	background-size: 100% 100%;  /* 背景图片尺寸和屏幕相同 */
+}
+
+div.wj_footer {
+	text-align: center;
+	background-color: #555; 
+	padding: 20px;
+}
+
+div.wj_news {
+	/* margin: 10px; */
+	padding-left: 20px;
+	/* width: 50%; */
+	/* border:5px solid white; */
+	/* background-color: #aaa; */
+}
+
+div.wj_p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.wj_back_button {
+	padding: 0px;
+	text-align: center;
+}
+
+p.wj_title {
+	 font-size: 6;
+	 font-weight: bold;
+}
+
+p.wj_title2 {
+	font-size: large;
+}
+
+p.wj_copyright {
+	color: white;
+	font-size: medium;
+}
+
+.carousel-inner img {
+	width:100%;
+}
+
+table {
+	font-size: 21px;
+	font-weight: 300;
+	text-align: left;
+	vertical-align: center;
+	padding: 15px;
+}
+
+tr + td{
+	text-align: center;
+}
+
+th {
+	text-align: center;
+	padding: 10px;
+}
+
+td + td {
+	padding: 10px;
+	padding-left: 50px;
+}
+
+hr {
+	height: 5px;
+}
+
+h3.wj_upper {
+	text-transform: uppercase;
+}

@@ -1,0 +1,93 @@
+/*
+* CSS  - style.css
+*/
+
+body {
+	background-image: url('item/back_red.jpg'); /* 设置背景图片 */
+	background-position: left top;  /* 设置背景图片相对屏幕位置 */
+	background-repeat: repeat; /* 设置图像是否重复 */
+	background-attachment: fixed; /* 设置滑动格式 */
+	background-size: contain;  /* 背景图片尺寸和屏幕相同 */
+	font-family: 'Microsoft YaHei';  /* 设置字体格式 */
+} 
+
+button {
+	width: 40px;
+	height: 40px;
+
+	font-weight: bold;
+	margin: 2px;
+
+}
+
+button[value='c'] {
+	background-color: yellow;
+}
+
+button[value='+'] {
+	background-color: gray;
+}
+
+button[value='-'] {
+	background-color: gray;
+}
+
+button[value='*'] {
+	background-color: gray;
+}
+
+button[value='/'] {
+	background-color: gray;
+}
+
+button[value='='] {
+	background-color: red;
+}
+
+/* 表格 */
+table {
+	border: 0px solid red;
+	font-size: medium;
+
+	letter-spacing: 4px;
+	margin: 8px;
+	padding: 8px;
+	text-align: left;
+}
+
+/* 表格的标题 */
+table caption{  
+	font-size: larger;  /* 字体大小，默认medium */
+	font-weight: bold;  /* 字体粗细 */
+	color: black;  /* 字体颜色 */
+
+	letter-spacing: 2px;  /* 字与字的间距 */
+	margin: 8px; 	 /* 与外部其他容器的外边距 上-右-下-左 */
+	padding: 8px;   /* 与内部其他容器的内边距 上-右-下-左 */
+	text-align: center;  /* 排列方式，居中 */
+}
+
+input[type='text'] {
+	width: 200px;
+	height: 40px;
+	margin-bottom: 8px;
+}
+
+/* 链接样式 */
+a:link {
+	color: blue;
+	/*#00FF00;*/
+}
+
+a:visited {
+	color: green;
+	/*color: #FF0000;*/
+}
+
+a:hover {
+	color: #FF00FF;
+}
+
+a:active {
+	color: #0000FF;
+}

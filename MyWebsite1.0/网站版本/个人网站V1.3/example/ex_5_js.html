@@ -1,0 +1,63 @@
+<!DOCTYPE HTML >  <!--文档类型标签，指定HTML的版本-->
+<html lang="zh-cn">  <!--HTML标签，关键字zh中文en英文-->
+
+<head>  <!--head头部，添加元信息meta，CSS，JS，定义标题-->
+	<!--refresh重定向，1秒后跳转到百度-->
+	<!-- <meta http-equiv="refresh" content="1;url=http://www.baidu.com"> -->
+	<!--Window_target显示窗口，独立页面-->
+	<!--<meta http-equiv="Window_target" content="_top"> -->
+	<meta charset="UTF-8"> <!--网页字符集-->
+	<meta name="Generator" content="WebStorm"> <!--网页生成工具-->
+	<meta name="Author" content="WangJie"> <!--网页作者-->
+	<meta name="revised" content="WJ,2018-9-26"><!--网页修改时间-->
+	<meta name="Keywords" content="HTMLBLOG"> <!--网页关键字，用于搜索引擎索引-->
+	<meta name="Description" content="(*^▽^*)"> <!--网页描述信息-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">	<!--外链式连接CSS文件-->
+	<title>JS事件处理</title> <!--网站标题-->
+</head>
+
+<body onmouseover="on_mouseover(event)" onclick="on_click(event)">  <!--body正文，显示页面的内容-->
+	<!--标题-->
+	<div style="text-align: center;">
+		<h1>学习JS：鼠标坐标位置应用</h1>
+		<hr>
+	</div>
+	<!--主体-->
+	<h2>鼠标移动时：</h2>
+	<div id="id-div-screen" class="div-pos"></div>
+	<div id="id-div-client" class="div-pos"></div>
+	<hr>
+	<h2>点击鼠标时：</h2>
+	<div id="id-div-click" class="div-pos"></div>
+	<script type="text/javascript">
+		function on_mouseover(e) {
+			var v_screen_pos = "鼠标屏幕位置是" + "X= " + e.screenX + " Y= " + e.screenY;
+			var v_client_pos = "鼠标浏览器位置是" + "X= " + e.clientX + " Y= " + e.clientY;
+			document.getElementById("id-div-screen").innerText = v_screen_pos;
+			document.getElementById("id-div-client").innerText = v_client_pos;
+		}
+		function on_click(e) {
+			document.getElementById("id-div-click").innerText =  "鼠标屏幕位置是" + "X= " + e.screenX + " Y= " + e.screenY + "\r\n" +  "鼠标浏览器位置是" + "X= " + e.clientX + " Y= " + e.clientY;
+		}
+	</script>
+
+
+	<!--返回上一级界面-->
+	<div style="text-align: center;">
+		<a href="..\study.html" style="font-size: 20px">--&gt;返回&lt;--</a>
+	</div>
+
+	<!--copyright相关信息-->
+	<div style="text-align: center;">
+		<hr>
+		<p>学习 HTML5 + CSS3 + JavaScript
+			<a href="#" target="_blank" title="WangJie">by WangJie. &copy; 2018</a>
+		</p>
+	</div>
+</body>
+
+<!--
+<script type="text/javascript" src="js/src.js"></script>  外链式连接JS脚本-->
+
+</html>
+

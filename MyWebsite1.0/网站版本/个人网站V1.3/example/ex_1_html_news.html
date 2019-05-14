@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="Generator" content="WebStorm"> <!--网页生成工具-->
+	<meta name="Author" content="WangJie"> <!--网页作者-->
+	<meta name="revised" content="WJ,2018-10-10"><!--网页修改时间-->
+	<meta name="Keywords" content="HTML,BLOG"> <!--网页关键字，用于搜索引擎索引-->
+	<meta name="Description" content="(*^▽^*)"> <!--网页描述信息-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">	<!--外链式连接CSS文件-->
+	<title>EX-1-HTML新闻浏览</title>
+	<style type="text/css">
+		a:visited{
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<div>  <!-- 导航栏 -->
+		<span>
+			<h4>
+			<a href="#">网站</a>
+			&gt;
+			<a href="#">新闻</a>
+			&gt;
+			<a href="#">科技</a>
+			</h4>
+		</span>
+	</div>
+	<div>  <!-- 标题和备注 -->
+		<h1 style="text-align: center;">在线新闻:McFate学习WEB开发中</h1>
+		<div>
+			<span style="float: left;display: block;">
+				关键词：<a href="#">新闻</a>&nbsp;<a href="#">科技</a>
+			</span>
+			<span style="float: right;display: block;">
+				<img src="css/item/comments.png"> <a href="#">评论</a> &nbsp;
+				<img src="css/item/share.png"> <a href="#">分享</a> 
+			</span>
+			<span style="text-align: center; display: block;">  <!-- 同一行居中的放最后调用 -->
+				2018-10-10 15:25:00 
+			</span>&nbsp;
+		</div>
+	</div>
+	<div>  <!-- 正文 -->
+		<p style="text-align: left;text-indent: 2em;font-size: 20px">
+			学习途中发现，使用&lt;span&gt;标签元素的时候，float浮动属性只有left和right两种，
+			要实现同一行文字有居左居右居中效果并存，需要先执行float再执行text-align:center属性，
+			同时加上display:block，否则将错行。
+		</p>
+		<img src="css/item/img_2.jpg" width="300px" height="200px" >
+	</div>
+	<!--返回上一级界面-->
+	<div style="text-align: center;">
+		<a href="..\study.html" style="font-size: 20px">--&gt;返回&lt;--</a>
+	</div>
+	<!--copyright相关信息-->
+	<div style="text-align: center;">
+		<hr>
+		<p>学习 HTML5 + CSS3 + JavaScript
+			<a href="#" target="_blank" title="WangJie">by WangJie. &copy; 2018</a>
+		</p>
+	</div>
+</body>
+</html>
