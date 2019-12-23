@@ -1,0 +1,35 @@
+######################
+# 读入txt统计指定词频 #
+######################
+
+import re
+
+# 文件名称（和该代码同一路径下）
+readFile = '测试.txt'
+
+ # 打开读写文件
+with open(readFile,"r", encoding='UTF-8') as fileIn:
+    
+    # 关键词列表
+    wordList = ['习近平', '企业', '经济', '小微企业'] # <-------在后面添加新的词语-------
+    
+    # 词频计数字典
+    wordDict = {}
+    
+    # 读取txt
+    txtContent = fileIn.read()
+    print(txtContent, '\n-----\n')
+                
+    # 遍历文本统计
+    for word in wordList:
+        number = len(re.findall(re.compile(word), txtContent))
+        wordDict[word] = number
+    
+    # 排序
+    # x[1]是按字频排序，x[0]则是按字排序
+    sortWord = sorted(wordDict.items(), key=lambda x:x[1],  reverse=True)
+    
+    # 输出
+    print('输出词频统计：\n')
+    for i in sortWord:
+        print(i[0], '   ',  i[1])

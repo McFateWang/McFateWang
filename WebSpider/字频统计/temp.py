@@ -1,0 +1,5 @@
+# urlfile =urllib.request.urlopen('http://www.chinadaily.com.cn/a/201911/29/WS5de0176ca310cf3e3557abec.html')
+# urlfile =urllib.request.urlopen('http://wzdt.pbc.gov.cn:8080/eportal/ui?pageId=134250&themeId=cb71af78972a4cb9bb0b79bc2903f8a9')
+# # urlfile = urllib.request.urlopen('http://cn.chinadaily.com.cn/')
+# html = urlfile.read()
+# html = html.decode('utf-8')

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh-cn">
+
+<head>
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jquery JS -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<!-- bootstrap JS -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- DIY CSS -->
+	<style type="text/css">
+		body {
+			padding-left: 30%;
+			padding-right: 30%;
+		}
+    </style>
+	<title>跨平台应用作业4-jQuery</title>
+</head>
+
+<body>
+	<div>
+		<h1>跨平台应用作业4-jQuery</h1> 
+		<p class="lead">王杰 21951122</p>
+		<hr />
+		
+		<h3>1. 给网页中所有的 &lt p &gt 元素添加 click 事件</h3>
+		<img src="1.png" class="media-object img-thumbnail">
+		<h3>作答</h3>
+		<hr />
+		
+		<p>段落1</p>
+		<p>段落2</p>
+		<p>段落3</p>
+	
+		<script type="text/javascript">		
+			// 自动执行
+			// $("p").each(function(){
+			//    alert($(this).html());
+			// });
+			
+			// 单击
+			$("p").each(function(){
+			   $(this).click(function(){
+				   alert('你单击了<p>元素： ' + $(this).html());
+			   });
+			});
+			
+			// 双击
+			// $("p").each(function(){
+			// 	$(this).dblclick(function(){
+			// 		alert('你双击了<p>元素： ' + $(this).html());
+			// 	});
+			// });
+		</script>
+
+		<hr />
+
+		<h3>2. 使一个特定的表格隔行变色</h3>
+		<img src="2.png" class="media-object img-thumbnail">
+		<h3>作答</h3>
+		<hr />
+
+		<table class="table table-hover">
+			<tr>
+				<td>第一行</td>
+				<td>第一行</td>
+			</tr>
+			<tr>
+				<td>第二行</td>
+				<td>第二行</td>
+			</tr>
+			<tr>
+				<td>第三行</td>
+				<td>第三行</td>
+			</tr>
+			<tr>
+				<td>第四行</td>
+				<td>第四行</td>
+			</tr>
+			<tr>
+				<td>第五行</td>
+				<td>第五行</td>
+			</tr>
+			<tr>
+				<td>第六行</td>
+				<td>第六行</td>
+			</tr>
+		</table>
+	
+		<script type="text/javascript">
+			$(function () {
+				// table下的tr，每当even偶数时:
+				$("table tr:even").css("background-color","pink"); 
+				$("table tr:odd").css("background-color","rgba(55,55,55,0.5)"); 
+			});
+		</script>
+	
+		<hr />
+
+		<h3>3. 对多选框进行操作, 输出选中的多选框的个数</h3>
+		<img src="3.png" class="media-object img-thumbnail">
+		<h3>作答</h3>
+		<hr />
+			
+		<div>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox1" value="option1"> 选项 1   </label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox2" value="option2"> 选项 2   </label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox3" value="option3"> 选项 3   </label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox3" value="option3"> 选项 4   </label>
+			<label class="checkbox-inline">	
+			<button type="button" class="btn btn-success">统计选中个数</button></label>
+		</div>
+
+		<script type="text/javascript">
+			$(function () {
+					$("button").click(function(){
+						alert('你选中的多选框个数是: ' + $("input[type='checkbox']:checked").length);
+					});
+			});
+		</script>
+
+		<hr />
+	</div>
+
+</body>
+
+</html>
